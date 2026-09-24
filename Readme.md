@@ -69,7 +69,7 @@ Post-encoding inspection revealed severe multicollinearity:
 `Corr(Has_<Service>_NoInternet, Is_InternetService_None) = 1.0`
 
 * Dropped 6 `_NoInternet` fields (`OnlineSecurity`, `OnlineBackup`, `DeviceProtection`, `TechSupport`, `StreamingTV`, `StreamingMovies`).
-* Dropped `Has_MultipleLines_NoPhone` ($r = 1.0$ with `Has_PhoneService`).
+* Dropped `Has_MultipleLines_NoPhone` ($correlation = 1.0$ with `Has_PhoneService`).
 * Dropped 11 unbilled customer accounts with `Tenure = 0`, boosting baseline $R^2$ from **0.985 to 0.991**.
 
 ### 2. Multi-Model Benchmark & Hyperparameter Tuning
