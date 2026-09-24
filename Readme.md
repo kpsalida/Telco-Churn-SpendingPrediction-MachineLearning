@@ -49,7 +49,7 @@ The project delivers dual ML capabilities:
 
 ##  My Personal Contributions
 
-Within this collaborative engagement, I was the **architect and author of the complete Operational Regression Engine** (detailed in `Regression_ML_Katerina.ipynb` and Section 4 of `Report.pdf`).
+Within this collaborative engagement, I **completed the Operational Regression Engine** (detailed in `Regression_ML_Katerina.ipynb` and Section 4 of `Report.pdf`).
 
 ### Key Methodological Contributions:
 * **Target Feature Formulation:** Identified that raw `Total_Charges` was heavily correlated with contract duration ($r = 0.83$ with `Tenure`). We designed and justified the feature `Avg_Monthly_Charge` (`Total_Charges / Tenure`), reducing the correlation with tenure to 0.25 and isolating the true monthly spending behavior.
