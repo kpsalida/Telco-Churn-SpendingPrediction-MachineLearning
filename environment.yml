@@ -1,0 +1,14 @@
+name: acg
+channels:
+  - defaults
+dependencies:
+  - matplotlib
+  - numpy
+  - pandas
+  - pymysql
+  - python=3.12
+  - seaborn
+  - jupyterlab
+  - scikit-learn
+  - pyarrow
+  - fastparquet
