@@ -1,11 +1,5 @@
 # Telecom Customer Intelligence: Churn Risk & Spend Prediction Pipeline
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
-[![XGBoost](https://img.shields.io/badge/Library-XGBoost-red.svg)](https://xgboost.readthedocs.io/)
-[![SHAP](https://img.shields.io/badge/Explainability-SHAP-green.svg)](https://shap.readthedocs.io/)
-[![Academic Project](https://img.shields.io/badge/MSc-Data_Science_(Deree)-purple.svg)]()
-
 An end-to-end Machine Learning strategy and operations project analyzing the **IBM Telco Customer Churn dataset** (7,043 customer profiles). 
 
 The project delivers dual ML capabilities:
@@ -14,7 +8,7 @@ The project delivers dual ML capabilities:
 
 ---
 
-## 🎯 Key Findings & Strategic Recommendations
+## Key Findings & Strategic Recommendations
 
 1. **Focus Retention on Critical Churn Profiles:** Month-to-month subscribers churn at 15× the rate of 2-year contract customers (42.7% vs. 2.8%). Targeted long-term contract conversion campaigns will yield the highest customer lifetime value.
 2. **Deploy Tuned SVM for Proactive Intervention:** The optimized SVM (RBF kernel with `class_weight='balanced'`) captures **75.0% of true churners** (421 out of 561 test accounts) compared to Random Forest's 48.0%. This captures **+152 additional at-risk accounts per evaluation cycle**.
@@ -23,7 +17,7 @@ The project delivers dual ML capabilities:
 
 ---
 
-## 🛠️ Data & Tools
+## Data & Tools
 
 * **Data source:** [IBM Telco Customer Churn Dataset (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
 * **Data files:** `raw_telco.csv`, `ml_ready_dataset.parquet`, `ml_ready_dataset_nodummies.parquet`
@@ -34,7 +28,7 @@ The project delivers dual ML capabilities:
 
 ---
 
-## 📁 Files in This Repository
+## Files in This Repository
 
 | File | Description |
 | :--- | :--- |
@@ -53,7 +47,7 @@ The project delivers dual ML capabilities:
 
 ---
 
-## 👤 My Personal Focus and Key Technical Contributions
+##  My Personal Contributions
 
 Within this collaborative engagement, I was the **architect and author of the complete Operational Regression Engine** (detailed in `Regression_ML_Katerina.ipynb` and Section 4 of `Report.pdf`).
 
@@ -67,7 +61,7 @@ Within this collaborative engagement, I was the **architect and author of the co
 
 ---
 
-## 🔍 In-Depth: Operational Regression Engine (Katerina Psallida)
+## In-Depth: Operational Regression Engine (Katerina Psallida)
 
 ### 1. Collinearity Fix & Feature Selection
 Post-encoding inspection revealed severe multicollinearity:
@@ -93,7 +87,7 @@ Post-encoding inspection revealed severe multicollinearity:
 
 ---
 
-## 💡 Model Explainability & Marginal Price Drivers (Slide 15)
+## Model Explainability & Marginal Price Drivers (Slide 15)
 
 Through `SHAP` analysis (`LinearExplainer` on Lasso and `TreeExplainer` on XGBoost), the "black box" of customer charges was decoded into explicit monetary drivers:
 
