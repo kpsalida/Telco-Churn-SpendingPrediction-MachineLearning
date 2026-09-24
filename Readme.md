@@ -8,12 +8,12 @@ The project delivers dual ML capabilities:
 
 ---
 
-## 👤 Personal Focus & Core Technical Contributions
+## My Personal Focus and Key Technical Contributions
 
-Within this collaborative engagement, I was the **primary architect and author of the complete Operational Regression Engine** (detailed in `Regression_ML_Katerina.ipynb` and Section 4 of the technical report).
+Within this collaborative engagement, I was the **architect and author of the complete Operational Regression Engine** (detailed in `Regression_ML_Katerina.ipynb` and Section 4 of the technical report).
 
 ### Key Methodological Contributions:
-* **Target Feature Formulation:** Identified that raw `Total_Charges` was heavily biased by contract duration ($r = 0.83$ with `Tenure`). I designed and justified `Avg_Monthly_Charge` ($\frac{\text{Total\_Charges}}{\text{Tenure}}$), reducing the correlation with tenure to $0.25$ and isolating true monthly spending behavior.
+* **Target Feature Formulation:** Identified that raw `Total_Charges` was heavily correlated with contract duration ($r = 0.83$ with `Tenure`). We designed and justified the feature `Avg_Monthly_Charge` (`Total_Charges / Tenure`), reducing the correlation with tenure to 0.25 and isolating the true monthly spending behavior.
 * **Leakage-Free Preprocessing Architecture:** Re-engineered the pipeline to eliminate pre-split data leakage. Designed a modular `ColumnTransformer` fitted strictly on training subsets—applying `StandardScaler` to continuous variables and `OneHotEncoder(drop='first', handle_unknown='ignore')` to high-dimensional categorical features.
 * **Collinearity Remediation:** Analyzed post-encoding correlation matrices and removed 7 redundant dummy columns (e.g., `_NoInternet` and `_NoPhone` variants) that exhibited perfect linear dependence ($r = 1.0$) with base service indicators.
 * **Domain Feature Engineering (`Household_Type`):** Tested behavioral hypotheses by engineering composite customer tiers (`Family`, `Couple`, `Single Parent`, `Single Adult`). Validated that household status yielded zero predictive gain ($R^2$ remained 0.991), proving pricing is strictly additive and service-driven rather than demographically tiered.
@@ -22,7 +22,7 @@ Within this collaborative engagement, I was the **primary architect and author o
 
 ---
 
-## 📊 End-to-End System Architecture
+## End-to-End System Architecture
 
 ```text
                         IBM Telco Raw Dataset (7,043 records)
@@ -45,7 +45,10 @@ Within this collaborative engagement, I was the **primary architect and author o
                   │                                               │
        Permutation Importance                         SHAP Explainer (Price Drivers)
 
+```
+
+<br><br>
 > **Project Attribution:**  
-> Developed as part of the *ITC6103B1 Applied Machine Learning (Winter Term 2026)* graduate curriculum at **The American College of Greece (Deree)**.  
+> Developed as part of the *ITC6103B1 Applied Machine Learning (Winter Term 2026)* graduate curriculum at **The American College of Greece (Deree)**, under the supervision of Dr. Elena Chatzimichali.  
 > *Collaborators:* Kimon Lappas, Ioannis Logothetis, Milena Mirumyan, Katerina Psallida.  
 > *Original Team Repository:* [`kitlapp/Telco_ML`](https://github.com/kitlapp/Telco_ML).
