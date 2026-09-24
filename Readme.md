@@ -1,21 +1,10 @@
 # Telecom Customer Intelligence: Churn Risk & Spend Prediction Pipeline
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange.svg)](https://scikit-learn.org/)
-[![XGBoost](https://img.shields.io/badge/Library-XGBoost-red.svg)](https://xgboost.readthedocs.io/)
-[![SHAP](https://img.shields.io/badge/Explainability-SHAP-green.svg)](https://shap.readthedocs.io/)
-[![Academic Project](https://img.shields.io/badge/MSc-Data_Science_(Deree)-purple.svg)]()
-
 An end-to-end Machine Learning strategy and operations project analyzing the **IBM Telco Customer Churn dataset** (7,043 customer profiles). 
 
 The project delivers dual ML capabilities:
 1. **Strategic Classification Engine:** Predicts binary customer churn to proactively trigger retention interventions.
 2. **Operational Regression Engine:** Reverse-engineers itemized customer billing dynamics to forecast monthly spend, audit contract anomalies, and evaluate product-tier revenue contribution.
-
-> **Project Attribution:**  
-> Developed as part of the *ITC6103B1 Applied Machine Learning (Winter Term 2026)* graduate curriculum at **The American College of Greece (Deree)**.  
-> *Collaborators:* Kimon Lappas, Ioannis Logothetis, Milena Mirumyan, Katerina Psallida.  
-> *Original Team Repository:* [`kitlapp/Telco_ML`](https://github.com/kitlapp/Telco_ML).
 
 ---
 
@@ -55,3 +44,8 @@ Within this collaborative engagement, I was the **primary architect and author o
    Winner: Tuned SVM (75% Recall)                  Winner: Lasso / XGBoost (R² = 0.991)
                   │                                               │
        Permutation Importance                         SHAP Explainer (Price Drivers)
+
+> **Project Attribution:**  
+> Developed as part of the *ITC6103B1 Applied Machine Learning (Winter Term 2026)* graduate curriculum at **The American College of Greece (Deree)**.  
+> *Collaborators:* Kimon Lappas, Ioannis Logothetis, Milena Mirumyan, Katerina Psallida.  
+> *Original Team Repository:* [`kitlapp/Telco_ML`](https://github.com/kitlapp/Telco_ML).
