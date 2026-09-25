@@ -5,7 +5,7 @@ An end-to-end Machine Learning strategy and operations project analyzing the **I
 1. **Strategic Classification Engine** — predicts binary customer churn to trigger proactive retention interventions
 2. **Operational Regression Engine** — reverse-engineers itemized billing dynamics to forecast monthly spend, audit contract anomalies, and evaluate product-tier revenue contribution
 
-**Course:** ITC6103B1 · Applied Machine Learning, Winter Term 2026 · The American College of Greece
+**Course:** ITC6103B1 · Applied Machine Learning, Winter Term 2026 · Supervised by Dr. Elena Chatzimichali · The American College of Greece
 **Team:** [Kimon Lappas](https://www.linkedin.com/in/kimon-ioannis-lappas/), [Ioannis Logothetis](https://www.linkedin.com/in/ioannis-logothetis-aaa253239/), [Milena Mirumyan](https://www.linkedin.com/in/milena-mirumyan-127979257/), [Katerina Psallida](https://www.linkedin.com/in/katerina-psalida/)
 
 ---
