@@ -19,7 +19,7 @@ An end-to-end Machine Learning strategy and operations project analyzing the **I
 
 ---
 
-## 🎯 My Contribution: Operational Regression Engine
+## My Contribution: Operational Regression Engine
 
 I owned the full regression pipeline end-to-end — from target variable design through final model explainability — detailed in [`Regression_ML_Katerina.ipynb`](Regression_ML_Katerina.ipynb) and Section 4 of the full report.
 
